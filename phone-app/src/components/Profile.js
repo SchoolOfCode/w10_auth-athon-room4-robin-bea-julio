@@ -32,8 +32,8 @@ const Profile = () => {
           </div>
           <button>Call API</button>
           <button>Call Protect API Route</button>
-          {/* <Form />
-          <Contacts /> */}
+          <Form />
+          <Contacts />
         </>
       )}
     </div>

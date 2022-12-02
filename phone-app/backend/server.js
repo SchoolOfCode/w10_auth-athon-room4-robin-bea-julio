@@ -1,7 +1,9 @@
 import express from "express";
 import { auth, requiredScopes } from "express-oauth2-jwt-bearer";
+import  cors from "cors";
 
 const app = express();
+app.use(cors());
 
 // Authorization middleware. When used, the Access Token must
 // exist and be verified against the Auth0 JSON Web Key Set.
@@ -33,8 +35,8 @@ app.get("/api/private-scoped", checkJwt, checkScopes, function (req, res) {
     message:
       "Hello from a private endpoint! You need to be authenticated and have a scope of read:messages to see this.",
   });
-});
+}); 
 
-app.listen(3000, function () {
-  console.log("Listening on http://localhost:3000");
+app.listen(4000, function () {
+  console.log("Listening on http://localhost:4000");
 });

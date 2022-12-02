@@ -10,6 +10,9 @@ export default function Form() {
         <input type="email" id="email" />
         <label htmlFor="number">Number</label>
         <input type="number" placeholder="072" id="number" />
+
+
+        
         <button type="submit">Add</button>
       </form>
     </div>

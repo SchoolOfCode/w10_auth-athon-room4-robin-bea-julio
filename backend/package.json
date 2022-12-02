@@ -1,0 +1,17 @@
+{
+  "author": "Robin/Bee/Julio",
+  "license": "ISC",
+  "description": "Backend for a phone book app",
+  "type": "module",
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config ./server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
